@@ -21,10 +21,20 @@ class GameViewController: UIViewController {
         
         sceneView.showsStatistics = true
         sceneView.allowsCameraControl = true
+        
+        mainScene.rootNode.addChildNode(createFloorNode())
     }
     
     func createMainScene() -> SCNScene {
-        var  mainScene = SCNScene(named: "art.scnassets/hero.dae")
+        let mainScene = SCNScene(named: "art.scnassets/hero.dae")
         return mainScene!
+    }
+    
+    func createFloorNode() -> SCNNode {
+        let floorNode = SCNNode()
+        let floor = SCNFloor()
+        floorNode.geometry = floor
+        floorNode.geometry?.firstMaterial?.diffuse.contents = "Floor"
+        return floorNode
     }
 }
