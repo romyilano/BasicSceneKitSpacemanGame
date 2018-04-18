@@ -35,7 +35,7 @@ class GameViewController: UIViewController {
         let floorNode = SCNNode()
         let floor = SCNFloor()
         floorNode.geometry = floor
-        floorNode.geometry?.firstMaterial?.diffuse.contents = "Floor"
+        floorNode.geometry?.firstMaterial?.diffuse.contents = "floor"
         return floorNode
     }
 }
