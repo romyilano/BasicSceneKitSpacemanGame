@@ -23,6 +23,7 @@ class GameViewController: UIViewController {
         sceneView.allowsCameraControl = true
         
         mainScene.rootNode.addChildNode(createFloorNode())
+        sceneView.allowsCameraControl = true
     }
     
     func createMainScene() -> SCNScene {
