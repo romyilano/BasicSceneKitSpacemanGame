@@ -23,6 +23,7 @@ class GameViewController: UIViewController {
         sceneView.allowsCameraControl = true
         
         mainScene.rootNode.addChildNode(createFloorNode())
+        mainScene.rootNode.addChildNode(Obstacles.PyramidNode())
         sceneView.allowsCameraControl = true
     }
     
@@ -37,18 +38,5 @@ class GameViewController: UIViewController {
         floorNode.geometry = floor
         floorNode.geometry?.firstMaterial?.diffuse.contents = "floor"
         return floorNode
-    }
-    
-    class func PyramidNode() -> SCNNode {
-        let pyramid = SCNPyramid(width: 10.0, height: 20.0, length: 10.0)
-        let pyramidNode = SCNNode(geometry: pyramid)
-        pyramidNode.name = "pyramid"
-        
-        let position = SCNVector3Make(30, 0, -40)
-        pyramidNode.position = position
-        pyramidNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-        pyramidNode.geometry?.firstMaterial?.shininess = 1.0
-        
-        return pyramidNode
     }
 }
