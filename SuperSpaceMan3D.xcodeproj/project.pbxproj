@@ -15,6 +15,7 @@
 		1C97755B2086F7750036F525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9775592086F7750036F525 /* LaunchScreen.storyboard */; };
 		1C9775662086F7760036F525 /* SuperSpaceMan3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9775652086F7760036F525 /* SuperSpaceMan3DTests.swift */; };
 		1C9775712086F7760036F525 /* SuperSpaceMan3DUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9775702086F7760036F525 /* SuperSpaceMan3DUITests.swift */; };
+		1C97759F2087919F0036F525 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C97759E2087919F0036F525 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1C97756C2086F7760036F525 /* SuperSpaceMan3DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSpaceMan3DUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9775702086F7760036F525 /* SuperSpaceMan3DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSpaceMan3DUITests.swift; sourceTree = "<group>"; };
 		1C9775722086F7760036F525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C97759E2087919F0036F525 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		1C9775422086F7730036F525 = {
 			isa = PBXGroup;
 			children = (
+				1C97759E2087919F0036F525 /* README.md */,
 				1C97754D2086F7730036F525 /* SuperSpaceMan3D */,
 				1C9775642086F7760036F525 /* SuperSpaceMan3DTests */,
 				1C97756F2086F7760036F525 /* SuperSpaceMan3DUITests */,
@@ -234,6 +237,7 @@
 			files = (
 				1C9775512086F7730036F525 /* art.scnassets in Resources */,
 				1C97755B2086F7750036F525 /* LaunchScreen.storyboard in Resources */,
+				1C97759F2087919F0036F525 /* README.md in Resources */,
 				1C9775582086F7750036F525 /* Assets.xcassets in Resources */,
 				1C9775562086F7730036F525 /* Main.storyboard in Resources */,
 			);
