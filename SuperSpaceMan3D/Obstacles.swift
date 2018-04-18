@@ -45,4 +45,12 @@ class Obstacles: NSObject {
         cynlinderNode.position = SCNVector3Make(14, 0, -25)
         return cynlinderNode
     }
+    
+    class func TorusNode() -> SCNNode {
+        let torus = SCNTorus(ringRadius: 12, pipeRadius: 5)
+        let torusNode = SCNNode(geometry: torus)
+        torusNode.geometry?.firstMaterial?.diffuse.contents = UIColor.orange
+        torusNode.position = SCNVector3Make(50, 10, -50)
+        return torusNode
+    }
 }
